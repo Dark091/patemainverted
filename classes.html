@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes — Patéma RP</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Patéma RP</a>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a class="active" href="classes.html">Classes</a>
+      <a href="combat.html">Combat</a>
+      <a href="carte.html">Carte du monde</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="page-title">Système de classes</h1>
+  <div class="subtitle">Sélectionnez une classe pour consulter ses compétences.</div>
+
+  <section class="intro">
+    <h2>Comment fonctionnent les classes?</h2>
+    <p>
+      Chaque personnage choisit une <strong>classe principale</strong>.
+      Celle-ci détermine son <strong>dé de combat</strong>, ses <strong>points de vie</strong>
+      et lui donne <strong>3 points de compétence</strong>.
+    </p>
+    <p>
+      Le personnage peut ensuite choisir une <strong>classe secondaire</strong>,
+      qui lui donne <strong>1 point de compétence</strong> à utiliser uniquement dans cette seconde classe.
+    </p>
+    <p>
+      Un personnage qui ne choisit aucune classe secondaire dispose plutôt de
+      <strong>4 points dans sa classe principale</strong>.
+    </p>
+    <p>Les compétences coûtent entre <strong>1 et 4 points</strong>.</p>
+  </section>
+
+  <div class="class-buttons">
+    <button class="class-button" data-class="scientifique">
+      <div class="class-name">Scientifique</div>
+      <div class="class-short">Analyse et comprend les découvertes.</div>
+      <div class="stats"><span class="stat">1d4</span><span class="stat">4 PV</span></div>
+    </button>
+
+    <button class="class-button" data-class="explorateur">
+      <div class="class-name">Explorateur</div>
+      <div class="class-short">Explore et découvre le monde.</div>
+      <div class="stats"><span class="stat">1d6</span><span class="stat">5 PV</span></div>
+    </button>
+
+    <button class="class-button" data-class="combattant">
+      <div class="class-name">Combattant</div>
+      <div class="class-short">Spécialiste du combat direct.</div>
+      <div class="stats"><span class="stat">1d8</span><span class="stat">6 PV</span></div>
+    </button>
+
+    <button class="class-button" data-class="assassin">
+      <div class="class-name">Assassin</div>
+      <div class="class-short">Très offensif, mais fragile.</div>
+      <div class="stats"><span class="stat">1d10</span><span class="stat">4 PV</span></div>
+    </button>
+
+    <button class="class-button" data-class="secouriste">
+      <div class="class-name">Secouriste</div>
+      <div class="class-short">Soutient et soigne son groupe.</div>
+      <div class="stats"><span class="stat">1d6</span><span class="stat">5 PV</span></div>
+    </button>
+  </div>
+
+  <section class="details-panel">
+    <div class="details-header">
+      <h2 id="detail-name">Sélectionnez une classe</h2>
+      <div class="details-description" id="detail-description">
+        Cliquez sur une classe ci-dessus pour afficher plus d'informations et consulter ses compétences.
+      </div>
+      <div class="stats" id="detail-stats"></div>
+    </div>
+    <div class="skills" id="detail-skills"></div>
+  </section>
+
+  <div class="note">
+    <strong>Important :</strong> ce système est encore à l'état de concept.
+    Les classes, compétences, coûts et valeurs pourront être modifiés selon les retours des joueurs.
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container">Projet communautaire RP inspiré de l'univers de Patéma.</div></footer>
+<script src="js/classes.js"></script>
+</body>
+</html>
